@@ -8,7 +8,7 @@
 
             <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+    
         <!-- Optional theme -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
@@ -61,15 +61,17 @@
         </div>
        </div>
    </nav><!-- /navbar hearder-->
+
 <!-- start tab index-->
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
             <div class="tabbable">
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="active"><a class="active" href="#sign_in" data-toggle="tab">Sign In</a></li>
                   <li><a href="#sign_up" data-toggle="tab">Register</a></li>
-                  <li><a href="#pwd" data-toggle="tab">Reset</a></li>
+                  <li><a href="#pwd" data-toggle="tab">Forgate Password</a></li>
+                  <li><a href="#msj" data-toggle="tab">Message</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="sign_in">
@@ -105,7 +107,19 @@
                         <input class="form-control" type="password" placeholder="re-enter password">  </input>
                         <br/>
                         <button class="btn btn-block btn-primary" type="submit">Change Password</button>
-                    </div><!--sign tab pane-->
+                    </div><!--change password tab pane-->
+                    <div class="tab-pane" id="msj">
+                            <span><h3>First Name</h3></span>
+                            <input type="text" class="form-control" placeholder="Your First Name">
+                            <span><h3>Last Name</h3></span>
+                            <input type="text" class="form-control" placeholder="Your Last Name">
+                            <span><h3>Email Address</h3></span>
+                            <input type="text" class="form-control" placeholder="Your email address">
+                            <span><h3>Message</h3></span>
+                            <textarea name="message" id="message" class="form-control" rows="10"></textarea>
+                            <br/>
+                            <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    </div>
             </div><!-- tabbed -->
         </div><!--/col-md-->
     </div><!--/row-->
